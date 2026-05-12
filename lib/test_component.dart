@@ -6,7 +6,7 @@ class TestComponent extends PositionComponent
     with FlameBlocListenable<TestBloc, int> {
   @override
   void onInitialState(int state) {
-    print(bloc.state);
+    print(bloc.toString());
     super.onInitialState(state);
   }
 }
